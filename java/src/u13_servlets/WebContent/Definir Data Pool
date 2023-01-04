@@ -1,0 +1,10 @@
+Las librerias, las ponemos en lib de WEB-INF en una aplicacion web.
+- Driver de la Base de Datos
+
+DataSource
+----------
+context.xml (el driver y la conexion se declara en META-INF)
+web.xml (definir el recurso de la conexion con la base de datos aqui tambien)
+
+	
+	

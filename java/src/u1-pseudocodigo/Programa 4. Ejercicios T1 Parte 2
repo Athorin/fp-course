@@ -1,0 +1,241 @@
+Proceso Ejercicios_T1_Parte2
+	
+	
+	Escribir "Ejercicio 14. Contar numeros hasta que se introduzca 0 y hacer la media"
+	escribir " ";escribir " ";
+	
+	Definir media como real; Definir n,i como entero;
+	
+	Repetir
+		Leer n
+		si n!=0 Entonces
+			media<-media+n
+			i<-i+1
+		FinSi
+	Hasta Que n=0
+	
+	si i!=0
+		media<-media/i
+	FinSi
+	
+	escribir "La media es: ",media
+	
+	
+	
+	
+	
+	escribir " ";escribir " ";escribir " ";
+	escribir "Ejercicio 15. Calcula e imprimir factorial"
+	escribir " ";
+	
+	Definir factor como entero;
+	
+	escribir "Introduce un numero: "; Leer n;
+	factor<-1
+	i<-1
+	
+	si n<0 entonces
+		escribir "Error, numero menor de 0"
+	sino
+		repetir
+			factor<-factor*i
+			i<-i+1
+		Hasta Que i>n
+	FinSi
+	
+	escribir "El calculo factorial de ",n," es: ",factor
+	
+	
+	
+	
+	escribir " ";escribir " ";escribir " ";
+	escribir "Ejercicio 16. Años bisiestos"
+	escribir " ";
+	
+	
+	definir age como entero;
+	escribir "Introduce un año y te digo si es bisiesto: "; Leer age;
+	escribir " ";
+	
+	si age%4=0 entonces
+		
+		si age%100=0 & age%400!=0
+			entonces escribir "El año ",age," no es bisiesto";
+		sino 
+			entonces escribir "El año ",age," es bisiesto";
+		finsi
+		
+	sino
+		entonces escribir "El año ",age," no es bisiesto";
+	finsi
+	
+	
+	
+	
+	
+	escribir " ";escribir " ";escribir " ";
+	escribir "Ejercicio 17. Caracteres en minuscula o no"
+	escribir " ";
+	
+	
+	Definir char como caracter
+	
+	escribir "Introduce un caracter para ver si es minuscula o no: "; Leer char;
+	escribir " ";
+	
+	si char>='a' & char<='z' | char='ñ' entonces
+		escribir "El caracter esta en minuscula"
+	Sino
+		si char>='A' & char<='Z' | char='Ñ'
+			escribir "El caracter esta en Mayuscula"
+		Sino
+			si char>='0' & char<='9' Entonces
+				escribir "Es un numero"
+			sino
+				escribir "Es otro tipo de caracter"
+			FinSi
+		FinSi
+	FinSi
+	
+	
+	
+	
+	
+	escribir " ";escribir " ";escribir " ";
+	escribir "Ejercicio 18. Procedimiento"
+	escribir " ";
+	
+	definir j,k como entero
+	
+	k<-10
+	j<-1
+	
+	P(j,k)
+	
+	Imprimir j," ",k
+	
+	
+	
+	
+	
+	escribir " ";escribir " ";escribir " ";
+	escribir "Ejercicio 19 y 20. Funcion Digito"
+	escribir " ";
+	
+	Definir car Como Caracter;
+	i<-0
+	Leer car
+	
+	Mientras car!=' '
+		si Digito(car)
+			entonces i<-i+1
+		FinSi
+		
+		Leer car
+	FinMientras
+	
+	escribir "Total de digitos leido: ",i
+	
+	
+	
+	escribir " ";escribir " ";escribir " ";
+	escribir "Ejercicio 21 y 22. Funcion Factorial"
+	escribir " ";
+	
+	definir num Como Entero
+	
+	repetir
+		escribir "Introduce un numero: "
+		leer num
+		
+		si num>=0 entonces
+			Escribir "El factorial es: ",Factorial(num)
+		Sino
+			escribir "Numero negativo, error"
+		FinSi
+		
+		escribir " ";escribir " ";
+	Hasta Que num<0
+	
+	
+	
+	escribir " ";escribir " ";escribir " ";
+	escribir "Ejercicio 23 y 24. Funcion Bisiesto"
+	escribir " ";
+	
+	
+	repetir
+		leer age
+		si Bisiesto(age)entonces
+			escribir "Bisiesto"
+		Sino
+			escribir "No bisiesto"
+		FinSi
+		escribir " ";escribir " ";
+	Hasta Que age=0
+	
+	
+FinProceso
+
+
+
+
+///////////////////////////////////////////////////////////
+
+Funcion P(a,b)
+
+b<-a+b
+a<-20
+
+finfuncion
+
+//////////
+
+Funcion resultado <- Digito(car)
+	
+	Definir resultado Como Logico
+	
+	si car >= '0' & car <= '9'
+		entonces resultado <- Verdadero
+
+	sino 
+		entonces resultado <- Falso
+	FinSi
+	
+FinFuncion
+
+//////////
+
+Funcion factor <- Factorial(num)
+	
+	definir i,factor Como Entero
+	
+	i<-1
+	factor<-1
+	
+	repetir
+		factor<-factor*i
+		i<-i+1
+	Hasta Que i>num
+	
+FinFuncion
+
+//////////
+
+Funcion a <- bisiesto(age)
+	
+	definir a como logico
+	
+	si age%4=0 entonces
+	
+		si age%100=0 & age%400!=0
+			a<-Falso
+		sino 
+			a<-Verdadero
+		finsi
+	
+	sino
+		a<-Falso
+	finsi
+	
+FinFuncion

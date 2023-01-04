@@ -1,0 +1,9 @@
+Conexion con la base de datos
+
+Modificar en la Configuracion la variable CLASSPATH
+Añadiendo un JAR a las librerias de eclipse
+
+Codigo Fuente:
+Establece Driver -> Class.forName()
+Abre Conexion -> DriverManager.getConnection(url,user,pass)
+Cierra Conexion -> close()

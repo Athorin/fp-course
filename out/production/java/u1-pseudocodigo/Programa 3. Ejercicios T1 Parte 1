@@ -1,0 +1,303 @@
+Proceso Ejercicios_T1
+	
+	Definir a,b,horas,num,resto,cont como entero; Definir x como real;
+	
+	Escribir " ";
+	Escribir "Ejercicio 1. Comparativa";
+	Escribir "1.1.	a=10	b=20";Escribir "1.2.	a=50	b=20";Escribir "1.3.	a=150	b=120";
+	
+	Escribir " ";Escribir " ";
+	
+	Escribir "Introduce a y b "; Leer a;Leer b;
+	Si a>b
+		entonces 
+			Si b>100
+				entonces escribir "Situacion 1";
+			FinSi
+		sino escribir "Situacion 2";
+		
+	FinSi
+
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 2. Simplificar Bucles";
+	Escribir "¿Cuantas horas?"; Leer horas;
+	
+	si horas < 35
+		entonces escribir "jornada incompleta";
+	sino
+		si horas < 41
+			entonces escribir "jornada completa";
+		sino
+			entonces escribir "exceso de horas";
+		finsi
+	finsi
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 3. Numero Par o Impar";
+	
+	Leer num;
+	resto<-num%2;
+	
+	Si resto=0
+		entonces escribir "El numero es par"
+	sino
+		entonces escribir "El numero es impar"
+	FinSi
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 4. Cual es mayor";
+	Escribir "Introduce dos numeros";
+	Leer a,b;
+	
+	num<-a-b
+	si a!=b
+		entonces
+		si num>=0
+			entonces escribir a," es mayor que ",b;
+		Sino
+			entonces escribir a," es menor que ",b;
+		FinSi
+	sino
+		entonces escribir a," es igual que ",b;
+	finsi
+	
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 5. Imprimir numeros";
+	Escribir "Introduce un numero y te imprimo hasta este numero";
+	Leer x;
+	Cont<-1;
+	
+	Si x>0
+		entonces 
+			repetir
+				escribir cont;
+				cont<-cont+1;
+			Hasta Que cont>x;
+		
+	sino
+		escribir "Has metido un numero negativo, aun asi te lo muestro";
+		mientras x<=cont hacer
+			escribir cont;
+			cont<-cont-1;
+		finmientras
+	finsi
+	
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 6. Crear Menu";Escribir " ";
+	
+	Escribir "Menu. Pulsa una de las opciones";Escribir " ";
+	Definir menu como entero; Definir otro como entero;
+	
+	repetir 
+		Escribir " ";
+		Escribir "1. Procesador de Texto"; Escribir "2. Base de Datos"; Escribir "3. Hoja de Calculo";
+		Escribir " ";
+		Leer menu;
+		otro<-menu;
+		segun menu hacer
+			1: escribir "Procesador de texto";
+			2: escribir "Base de Datos";
+			3: escribir "Hoja de Calculo";
+			otro: escribir "Dato mal introducido";
+		FinSegun
+	hasta que menu=1|menu=2|menu=3;
+	Escribir " ";Escribir " ";
+	
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 6 v2. Crear Menu";Escribir " ";
+	
+	Escribir "Menu. Pulsa una de las opciones";Escribir " ";
+	Definir opcion como caracter;
+	Escribir "1. Procesador de Texto"; Escribir "2. Base de Datos"; Escribir "3. Hoja de Calculo";
+	
+	Leer opcion;
+	si opcion='1'
+		entonces escribir "1. Procesador de Texto";
+	sino
+		si opcion='2'
+			entonces escribir "2. Base de Datos";
+		Sino
+			si opcion='3'
+				entonces escribir "3. Hojas de Calculo";
+			FinSi
+		FinSi
+	FinSi
+	
+	escribir "Ha introducido tecla erronea";
+	
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 7. 1 al 100 y suma de numeros pares e impares.";
+	
+	Definir n, par, impar como entero;
+	Escribir " ";
+	Escribir "Te voy a mostar una lista del 1 al 100 y te voy a sumar los pares, y los impares por separado.";
+	Escribir " ";
+	n<-0
+	Repetir
+		n<-n+1;
+		escribir n;
+		si n%2=0
+			entonces	par<-par+n;
+		Sino
+			entonces	impar<-impar+n;
+		FinSi
+	Hasta Que n=100;
+	
+	Escribir "Suma de los numeros pares: ",par;
+	Escribir "Suma de los numeros impares: ",impar;
+	
+	
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 8. Suma de los cuadrados de los numeros pares del 1 al 100.";
+	Escribir " ";
+	Definir cuad como real;
+	Escribir "Te voy a mostrar la suma de los cuadrados pares hasta el 100: ";
+	n<-0
+	par<-0;
+	
+	mientras n<=100 hacer
+		n<-n+1;
+		si n%2=0
+			entonces 
+			par<-par+(n^2);
+			cuad<-n^2
+			escribir n,"-->",cuad;
+		FinSi
+		
+	FinMientras
+	escribir " ";
+	escribir "La suma de los cuadrados es: ",par;
+	
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 9. Multiplos de 2 o 3 que haya hasta 100.";
+	Escribir " ";
+	
+	Definir multiplo,mult,mult1 como entero;
+	Escribir "Los multiplos de 2 o 3 son: ";
+	mult<-0; mult1<-0;
+	
+	para n<-0 hasta 100 con paso 1 hacer
+		
+		si n!=0 entonces
+			si n%2=0 & n%3=0
+				entonces mult1<-mult1+1;
+			FinSi
+			
+			si n%2=0 | n%3=0 
+				entonces mult<-mult+1;
+				si n%2=0 & n%3=0
+					entonces escribir n," <------- 2 y 3";
+				FinSi
+				si n%2!=0
+					entonces escribir n," <----- 3";
+				FinSi
+				si n%3!=0
+					entonces escribir n," <-- 2";
+				FinSi
+			FinSi
+		finsi
+	FinPara
+	
+	escribir "Hay ",mult," multiplos totales de 2 O de 3";
+	escribir "Hay ",mult1," multiplos totales de 2 Y de 3";
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejericio 10. Numeros hasta encontrar un Nulo";
+	Escribir " ";
+	Definir i como entero;
+	Leer n
+	i<-0
+	mientras n!=0 Hacer
+		si n>10
+			entonces i<-i+1
+		FinSi
+		leer n
+	FinMientras
+	escribir "La cantidad de numeros mayores de 10 son: ",i;
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 11. Obtener el productor por sumas sucesivas";
+	Escribir " ";
+	
+	Escribir "Introduce el primer numero: "; Leer a;
+	Escribir "Introduce el segundo numero: "; Leer b;
+	num<-0;
+	cont<-0;
+	repetir
+		num<-num+a
+		cont<-cont+1
+	Hasta Que cont=b;
+	escribir "El resultado es: ",num;
+	
+	
+	
+	
+	
+	Escribir " ";Escribir " ";
+	Escribir "Ejercicio 12. Calcular la media de 5 numeros";
+	Escribir " ";
+	Definir suma como entero;Definir media como real;
+	
+	Escribir "Introduce valores para calcular la media: ";
+	suma<-0
+	
+	para i<-0 hasta 4 con paso 1 hacer
+		Leer n;
+		suma<-suma+n;
+	FinPara
+	
+	media<-suma/i
+	Escribir "La media es: ",media;
+	
+	
+		
+	
+	
+FinProceso
+
+

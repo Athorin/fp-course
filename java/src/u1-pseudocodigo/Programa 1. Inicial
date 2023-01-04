@@ -1,0 +1,11 @@
+Proceso Numero
+	Definir num Como Entero
+	Escribir "Introduzca un numero cualquiera para ser comparado: "
+	Leer num
+	Si num>100 Entonces
+		escribir "Es mayor que 100"
+	Sino 
+		escribir "No es mayor que 100, ahh pringao!"
+	FinSi
+	
+FinProceso

@@ -1,0 +1,32 @@
+Proceso CuentaNumero
+	
+	Definir num Como Entero
+	Num<-0
+	
+	Mientras num<=5 Hacer
+		escribir num
+		num<-num+1
+	Finmientras
+	
+	Escribir " ";
+	
+	Repetir
+		num<-num-1
+		escribir num
+	Hasta Que num=0
+	
+	Escribir " ";
+	
+	para num<-0 hasta 5 con paso 1 Hacer
+		escribir num
+	FinPara
+	
+	Escribir " ";
+	
+	para num<-5 hasta 0 con paso -1 Hacer
+		escribir num
+	FinPara
+	
+	Escribir " ";
+	
+FinProceso
