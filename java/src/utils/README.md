@@ -1,2 +1,1 @@
-# fp-course
-Exercises from FP Course
+# Utils
