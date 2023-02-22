@@ -9,17 +9,27 @@ El pseudocódigo no puede ejecutarse en un ordenador ya que entonces dejaría de
 
 ### Sintaxis del pseudocódigo
 Un programa escrito en pseudocódigo debe permitir instrucciones primitivas, de proceso, de control, de descripción y compuestas.
+Se divide en dos bloques:
+- Bloque de **Declaraciones**:  se especifica los datos que utiliza el programa (constantes, variables, tablas...)
+- Bloque de **Instrucciones**: constituido por el conjunto de operaciones que se han de realizar para obtener los resultados deseados
 
-### Opciones del lenguaje (perfiles)
-El lenguaje que utilizamos para construir el pseudocódigo no es estándar. 
-Podemos añadir o eliminar algunas reglas de sintaxis sin ningún problema. 
-En la opción Configurar-Opciones del Lenguaje (perfiles), podemos escoger las características del pseudocódigo que vamos a utilizar. 
-**Tenemos tres alternativas**:
-
-- **Escoger un perfil** que define un pseudocódigo utilizado en distintos centros educativos y universidades.
-- **Perfil flexible**: Está escogido por defecto, y no es muy exigente con las reglas que hay que utilizar para escribir el pseudocódigo.
-- **Perfil estricto**: Establece una reglas que hacen que el pseudocódigo se parezca más a un lenguaje de programación: se debe definir las variables y sus tipos, las instrucciones deben terminar en punto y coma,…
-
+### Clasificacion de instrucciones
+- **Declaracion**: indican al procesador que reserve espacio en la memoria para los datos del programa,
+indicando su nombre, tipo y caracteristicas.
+- **Primitivas**: Son aquellas que ejecuta el procesador de modo inmediato. Tipos:
+  - **Asignacion**: NombreVariable -> valor
+  - **Entrada**: leer NombreVariable
+  - **Salida**: imprimir/escribir Expresion
+- **Compuestas**: llamadas a subprogramas.
+- **Control**
+  - **Alternativas** (condicionales)
+    - **Simple**
+    - **Doble**
+    - **Multiple**
+  - **Repetitivas** (bucles)
+    - **Para**
+    - **Mientras**
+    - **Repetir**
 
 ### Estructura de un algoritmo en pseudocódigo
 Todo algoritmo en pseudocódigo tiene la siguiente estructura general:
